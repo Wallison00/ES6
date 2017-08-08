@@ -62,11 +62,10 @@
     <script src="js/app/models/Negociacao.js"></script>
     <script>
 
-      var h1 = new Negociacao();
-      console.log(h1);
+      var h1 = new Negociacao(new Date(), 5, 1000); //Passando os parametros de forma direta;
+      var volume = h1.obtemVolume();
+      console.log(volume);
 
-      var h2 = new Negociacao();
-      console.log(h2);
 
     </script>
 

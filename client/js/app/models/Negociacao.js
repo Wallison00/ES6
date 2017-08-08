@@ -1,10 +1,16 @@
 class Negociacao {
 
   //a função constructor() vai definir os atributos de uma classe
-  constructor(){
+  constructor(dataP, quantidadeP, valorP){//dataP, quantidadeP e valorP, são parametros recebidos.
 
-      this.data = new Date();
-      this.quantidade = 1;
-      this.valor = 0.0;
+      this.data = dataP;
+      this.quantidade = quantidadeP;
+      this.valor = valorP;
+  }
+
+  obtemVolume(){
+
+    return this.quantidade * this.valor;
+
   }
 }
